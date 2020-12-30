@@ -1,0 +1,10 @@
+[Unit]
+Description=Fan Control
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/cpu_fan
+
+[Install]
+WantedBy=multi-user.target
